@@ -1,0 +1,32 @@
+
+<app-default></app-default>
+<div class="container px-0 py-5 bg-light">
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h4 class="card-title center my-4">SIGN IN</h4>
+      <!-- Icon -->
+      <div class="fadeIn first">
+
+      </div>
+
+      <!-- Login Form -->
+      <form (submit)="signIn()">
+        <input type="text" [(ngModel)]="user.email" id="login" class="fadeIn second" name="login" placeholder="USER/EMAIL">
+        <input type="password" [(ngModel)]="user.password" id="password" class="fadeIn third" name="login" placeholder="PASSWORD">
+        <input type="submit" class="fadeIn fourth" value="SIGN IN">
+      </form>
+
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="">Forgot Password?</a>
+      </div>
+
+    </div>
+  </div>
+  <div class="d-flex justify-content-center my-3 py-3"  >
+  <h6 style="color: #9E9E9E;">digitallibrarysupport@gmail.com</h6>
+  </div>
+  </div>
+
